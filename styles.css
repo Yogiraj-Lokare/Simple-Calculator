@@ -1,0 +1,68 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right,rgb(96, 196, 30),rgb(58, 144, 214));
+    /*background: radial-gradient(rgb(129, 218, 57),rgb(24, 146, 216));*/
+    
+}
+.nam{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+    /*background: radial-gradient(rgb(22, 14, 14),rgb(245, 240, 240));*/
+}
+
+.main{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 80vh;
+    grid-template-columns: repeat(4,150px);
+    grid-template-rows:minmax(180px,auto) repeat(5,120px);
+}
+.main > button{
+    cursor: pointer;
+    font-size: 4rem;
+    color: white;
+    /*border: 1px solid rgb(250, 244, 244);*/
+    border: none;
+    outline: none;
+    background-color: rgba(88, 60, 60, 0);
+}
+.main > button:hover{
+   /* background-color: rgb(255, 255, 255);*/
+    font-size: 5rem;
+    color: black;
+}
+.main .span-two-1:hover{
+    /*background-color: rgb(238, 34, 34);*/
+    color: red;
+}
+
+.output{
+    grid-column: 1/-1;
+    background-color: rgba(44, 112, 32, 0);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output .previos{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+}
+.output .current{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+}
